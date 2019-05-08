@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Question3</title>
+</head>
+
+<body>
+    <h1>Hotel Reservation Form</h1>
+
+    <form action="">
+        <fieldset>
+            <legend>Reservation Information</legend>
+
+            <label>Number of rooms (max 5 people per room):</label>
+            <input type="number" name = "NbfOfRooms"/>
+
+            <br/><br/>
+
+            <label>Smoker?</label>
+            <label><input type="radio" name="smokerAns" value="yes"/>Yes</label>
+            <label><input type="radio" name="smokerAns" value="no" />No</label>
+
+            <br/><br/>
+
+            <label>Check-in date (YYYY/MM/DD):</label>
+            <input type="date" name="Check-in date">
+
+            <br/><br/>
+
+            <label>Check-out date (YYYY/MM/DD):</label>
+            <input type="date" name="Check-out date">
+        </fieldset>
+
+        <br/>
+
+        <fieldset>
+            <legend>Room Specifications</legend>
+
+            <ul>
+                <li>
+                    <label>Number of single/double beds:</label>
+                    <br/>
+
+                    <input type="checkbox" name="nbr s/d beds" value="1/0">
+                    <label>1/0</label>
+                    
+                    <input type="checkbox" name="nbr s/d beds" value="0/1">
+                    <label>0/1</label>
+                    
+                    <input type="checkbox" name="nbr s/d beds" value="1/1">
+                    <label>1/1</label>
+                    
+                    <input type="checkbox" name="nbr s/d beds" value="2/0">
+                    <label>2/0</label>
+                    
+                    <input type="checkbox" name="nbr s/d beds" value="0/2">
+                    <label>0/2</label>
+                    
+                    <input type="checkbox" name="nbr s/d beds" value="2/1">
+                    <label>2/1</label>
+                    
+                    <input type="checkbox" name="nbr s/d beds" value="1/2">
+                    <label>1/2</label>
+
+                    <br/><br/>
+                </li>
+
+                <li>
+                    <label>Do you have preferred locations for the hotel?</label>
+                    <br/>
+
+                    <input type="checkbox" name="prefLoc" value="Downtown">
+                    <label>Downtown</label>
+                    
+                    <input type="checkbox" name="prefLoc" value="Montreal East">
+                    <label>Montreal East</label>
+                   
+                    <input type="checkbox" name="prefLoc" value="Montreal West">
+                    <label>Montreal West</label>
+                    
+                    <input type="checkbox" name="prefLoc" value="Near the airport">
+                    <label>Near the airport</label>
+                   
+                    <input type="checkbox" name="prefLoc" value="Old Port">
+                    <label>Old Port</label>
+                    
+                    <input type="checkbox" name="prefLoc" value="No preference">
+                    <label>No preference</label>
+
+                    <br/><br/>
+                </li>
+
+                <li>
+                    <label>Price range (price per night):</label>
+
+                    <br/>
+
+                        <select name = "priceRange">
+                            <option name="prRng" value ="lessThan80$">&lt;$80</option>
+                            <option name="prRng" value="lessThan60$">&lt;$60</option>
+                            <option name="prRng" value="lessThan40$">&lt;$40</option>
+                            <option name="prRng" value="noPriceLimit">no price limit</option>
+                        </select>
+
+                    <br/><br/>
+                </li>
+
+                <li>
+                    <label>Number of private parking spots required:</label>
+                    <br/>
+
+                    <input type="radio" name="prkSpots" value="0"/>
+                    <label>0</label>
+                    <br/>
+
+                    <input type="radio" name="prkSpots" value="1">
+                    <label>1</label>
+                    <br/>
+
+                    <input type="radio" name="prkSpots" value="2"/>
+                    <label>2</label>
+                    <br/>
+
+                    <input type="radio" name="prkSpots" value="3"/>
+                    <label>3</label>
+                    <br/>
+
+                    <input type="radio" name="prkSpots" value="4"/>
+                    <label>4</label>
+                    <br/>
+
+                    <br/>
+                </li>
+
+                <li>
+                    <label>Special facilities required:</label>
+                    <br/>
+
+                    <input type="checkbox" name="spcFac" value="minibar"/>
+                    <label>Minibar</label>
+
+                    <input type="checkbox" name="spcFac" value="balcony"/>
+                    <label>Balcony</label>
+
+                    <input type="checkbox" name="spcFac" value="pool"/>
+                    <label>Pool</label>
+
+                    <input type="checkbox" name="spcFac" value="waterFront"/>
+                    <label>Water front</label>
+
+                    <input type="checkbox" name="spcFac" value="gardenFront"/>
+                    <label>Garden front</label>
+
+                </li>
+
+            </ul>
+
+        </fieldset>
+
+
+
+        <p>Let's see what we can find...</p>
+
+
+
+        <input type="submit" value="Submit"/>
+
+        <input type="reset" value="Reset"/>
+
+    </form>
+
+
+
+</body>
+
+</html>
